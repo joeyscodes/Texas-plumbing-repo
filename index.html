@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mei Ling – Exquisite Chinese dining in Al-Qudaibiya Palace, Manama. Reserve your table for a luxurious culinary experience.">
+  <title>Mei Ling | Luxury Chinese Restaurant in Manama</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="loader"><div class="spinner"></div></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">MEI LING</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reservation.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservation.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO with Lantern -->
+  <section class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">Al-Qudaibiya Palace, Manama</p>
+      <h1 class="hero-title">Tradition<br>Refined</h1>
+      <p class="hero-subtitle">Mei Ling brings centuries of Chinese culinary mastery to the heart of Bahrain. Every dish is a celebration of harmony, aroma, and exquisite taste.</p>
+      <div class="hero-buttons">
+        <a href="reservation.html" class="btn btn-primary">Reserve Your Table</a>
+        <a href="menu.html" class="btn btn-outline">Discover the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNATURE DISH SHOWCASE (parallax) -->
+  <section class="dish-showcase">
+    <div class="overlay"></div>
+    <div class="showcase-content reveal">
+      <h2>The Mei Ling Peking Duck</h2>
+      <p>Slow-roasted to crispy perfection, carved tableside, and served with our secret hoisin glaze. A legendary dish that defines our kitchen.</p>
+      <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="section about-teaser">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <span class="section-label">Our Heritage</span>
+          <h2>The Art of Chinese Gastronomy</h2>
+          <p>Mei Ling is named after the legendary Chinese opera singer, embodying grace and passion. Our chefs, trained in Beijing and Hong Kong, use time‑honoured techniques with the finest ingredients sourced globally.</p>
+          <p>From hand‑pulled noodles to delicately steamed dim sum, every plate is a masterpiece of balance — sweet, sour, salty, bitter, and umami in perfect harmony.</p>
+          <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3dcd3f0c8?w=800&q=80" alt="Elegant Chinese dining hall">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED MENU -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Signature Selection</span>
+        <h2>Chef's Masterpieces</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80" alt="Peking Duck">
+          <div class="menu-card-content"><h4>Imperial Peking Duck</h4><p>Whole roasted duck, pancakes, spring onion, hoisin.</p><span class="price">BD 22</span></div>
+        </div>
+        <div class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=600&q=80" alt="Dim Sum Platter">
+          <div class="menu-card-content"><h4>Royal Dim Sum Basket</h4><p>Har gow, siu mai, xiao long bao, and more.</p><span class="price">BD 14</span></div>
+        </div>
+        <div class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Wok-fried lobster">
+          <div class="menu-card-content"><h4>Wok‑Fried Lobster</h4><p>Ginger, spring onion, XO sauce, wok hei.</p><span class="price">BD 28</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Atmosphere</span><h2>Inside Mei Ling</h2></div>
+      <div class="gallery-grid">
+        <img class="reveal" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Private dining">
+        <img class="reveal" src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&q=80" alt="Bar area">
+        <img class="reveal" src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&q=80" alt="Chef preparing dish">
+        <img class="reveal" src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80" alt="Elegant table">
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" style="background:var(--bg-dark); color:var(--text-light);">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label" style="color:var(--accent);">Guest Praise</span><h2 style="color:#fff;">Voices of Delight</h2></div>
+      <div class="testimonial-cards">
+        <div class="testimonial-card reveal" style="background:rgba(255,255,255,0.05);">
+          <p class="quote">"Mei Ling transported us to Beijing. The dim sum was delicate and divine, the service impeccable. A true gem in Manama."</p>
+          <p class="author">— Laila & Ahmed, Manama</p>
+        </div>
+        <div class="testimonial-card reveal" style="background:rgba(255,255,255,0.05);">
+          <p class="quote">"The Peking Duck is the best I've had outside China. The theatrical carving and the flavours left us speechless."</p>
+          <p class="author">— James T., London</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION CTA -->
+  <section class="section reservation-cta">
+    <div class="container reveal">
+      <span class="section-label">Join Us</span>
+      <h2>Experience the Elegance</h2>
+      <p>Indulge in an unforgettable evening where every detail is crafted to perfection.</p>
+      <a href="reservation.html" class="btn btn-primary" style="background:var(--accent); border-color:var(--accent);">Make a Reservation</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Mei Ling</h4><p>Al-Qudaibiya Palace<br>338 Shaikh Isa Ave, Manama</p></div>
+      <div class="footer-col"><h4>Hours</h4><p>Mon–Sat: 12:00‑15:00 & 19:00‑23:30</p><p>Sunday: Closed</p></div>
+      <div class="footer-col"><h4>Contact</h4><p>+973 1711 1187</p><p>info@meilingbahrain.com</p></div>
+      <div class="footer-col"><h4>Follow</h4><div class="social-links"><a href="#">📷</a><a href="#">📘</a><a href="#">⭐</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 <span class="accent">Mei Ling</span>. All rights reserved.</p></div>
+  </footer>
+</body>
+  </html>
