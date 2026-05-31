@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Vijo Fitness Gym – Start your membership or claim a free trial session. Fill out the form and we'll get you started.">
+  <title>Membership | Vijo Fitness Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sentinel for navbar scroll detection -->
+  <div id="scroll-sentinel"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar">
+    <div class="logo">VIJO<span>FIT</span></div>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Classes</a>
+      <a href="reservation.html" class="active">Membership</a>
+      <a href="contact.html">Contact</a>
+      <a href="reservation.html" class="nav-cta">Join Now</a>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="breadcrumb">Home > Membership</div>
+    <h1>Start Your Journey</h1>
+    <p style="color: #b0b0b0; max-width: 500px; margin: 1rem auto;">Every transformation begins with a single step. Fill out the form below and a membership specialist will contact you within 24 hours.</p>
+  </section>
+
+  <!-- ========== FORM SECTION ========== -->
+  <section class="section reveal">
+    <div class="form-container">
+      <form class="ajax-form" action="https://formspree.io/f/FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Start Date</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred Time</label>
+          <select id="time" name="time">
+            <option value="">Select a time</option>
+            <option value="morning">Morning (6AM - 9AM)</option>
+            <option value="midday">Midday (9AM - 3PM)</option>
+            <option value="evening">Evening (3PM - 9PM)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="guests">Membership Type</label>
+          <select id="guests" name="guests">
+            <option value="">Select membership</option>
+            <option value="individual">Individual</option>
+            <option value="couple">Couple</option>
+            <option value="family">Family</option>
+            <option value="trial">Free Trial Session</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="requests">Special Requests or Goals</label>
+          <textarea id="requests" name="requests" placeholder="Tell us about your fitness goals or any questions..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Submit Request</button>
+      </form>
+
+      <!-- Confirmation message (hidden by default) -->
+      <div id="confirmation-message" class="confirmation">
+        <i>✓</i>
+        <h3>Request Received!</h3>
+        <p>Thank you for choosing Vijo Fitness Gym. A member of our team will contact you shortly to finalise your membership.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT INFO SECTION ========== -->
+  <section class="section testimonials reveal" style="text-align: center; background: transparent;">
+    <div class="section-label">Need Help?</div>
+    <h2>We're Here For You</h2>
+    <div class="testimonial-grid" style="margin-top: 2rem;">
+      <div class="testimonial-card">
+        <h4>Visit Us</h4>
+        <p>21 24 St - Al Karama<br>Dubai, UAE</p>
+      </div>
+      <div class="testimonial-card">
+        <h4>Call Us</h4>
+        <a href="tel:+971504586689" style="color: #c9a84c; text-decoration: none;">+971 50 458 6689</a>
+      </div>
+      <div class="testimonial-card">
+        <h4>Email Us</h4>
+        <a href="mailto:info@vijofitness.com" style="color: #c9a84c; text-decoration: none;">info@vijofitness.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer">
+      <div class="footer-col">
+        <h3>Vijo<span style="color: #c9a84c;">Fit</span></h3>
+        <p>Elite fitness in the heart of Dubai.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Classes</a>
+        <a href="reservation.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>21 24 St - Al Karama</p>
+        <p>Dubai, UAE</p>
+        <a href="tel:+971504586689">+971 50 458 6689</a>
+        <a href="mailto:info@vijofitness.com">info@vijofitness.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vijo Fitness Gym. All rights reserved. Designed with passion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+    </html>
