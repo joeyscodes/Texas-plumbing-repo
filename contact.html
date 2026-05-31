@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Vijo Fitness Gym – Get in touch, visit our facility in Al Karama, Dubai, or send us a message. We're here to help you start your fitness journey.">
+  <title>Contact | Vijo Fitness Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sentinel for navbar scroll detection -->
+  <div id="scroll-sentinel"></div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar">
+    <div class="logo">VIJO<span>FIT</span></div>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Classes</a>
+      <a href="reservation.html">Membership</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="reservation.html" class="nav-cta">Join Now</a>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header">
+    <div class="breadcrumb">Home > Contact</div>
+    <h1>Get in Touch</h1>
+    <p style="color: #b0b0b0; max-width: 500px; margin: 1rem auto;">Questions? Ready to start? Visit us or drop a message — we'll reply within hours.</p>
+  </section>
+
+  <!-- ========== CONTACT FORM + INFO SECTION ========== -->
+  <section class="section reveal">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; max-width: 1100px; margin: 0 auto;">
+
+      <!-- Contact Form -->
+      <div class="form-container" style="padding: 2.5rem; margin: 0;">
+        <form class="ajax-form" action="https://formspree.io/f/FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+        <!-- Confirmation message -->
+        <div id="confirmation-message" class="confirmation">
+          <i>✓</i>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. We'll get back to you shortly.</p>
+        </div>
+      </div>
+
+      <!-- Contact Details & Map -->
+      <div>
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Visit the Gym</h3>
+          <p style="color: #b0b0b0;">21 24 St - Al Karama<br>Dubai, United Arab Emirates</p>
+          <p style="margin-top: 1rem;">
+            <strong>Phone:</strong> <a href="tel:+971504586689" style="color: #c9a84c; text-decoration: none;">+971 50 458 6689</a><br>
+            <strong>Email:</strong> <a href="mailto:info@vijofitness.com" style="color: #c9a84c; text-decoration: none;">info@vijofitness.com</a>
+          </p>
+        </div>
+
+        <div style="margin-bottom: 2rem;">
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Opening Hours</h3>
+          <p style="color: #b0b0b0;">
+            Monday – Friday: 6AM – 11PM<br>
+            Saturday – Sunday: 7AM – 9PM
+          </p>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div style="border-radius: 4px; overflow: hidden; border: 1px solid #333;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.273503452122!2d55.30097631500989!3d25.261422883859544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f5f5f5f5f5f%3A0x0!2zMjXCsDE1JzQxLjEiTiA1NcKwMTgnMTAuNyJF!5e0!3m2!1sen!2sae!4v1690000000000"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Vijo Fitness Gym Location">
+          </iframe>
+        </div>
+
+        <!-- Social Links -->
+        <div style="margin-top: 2rem;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Follow Us</h3>
+          <div style="display: flex; gap: 1.5rem;">
+            <a href="#" style="color: #b0b0b0; font-size: 1.2rem; transition: color 0.3s;">Instagram</a>
+            <a href="#" style="color: #b0b0b0; font-size: 1.2rem; transition: color 0.3s;">Facebook</a>
+            <a href="#" style="color: #b0b0b0; font-size: 1.2rem; transition: color 0.3s;">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer">
+      <div class="footer-col">
+        <h3>Vijo<span style="color: #c9a84c;">Fit</span></h3>
+        <p>Elite fitness in the heart of Dubai.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Classes</a>
+        <a href="reservation.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>21 24 St - Al Karama</p>
+        <p>Dubai, UAE</p>
+        <a href="tel:+971504586689">+971 50 458 6689</a>
+        <a href="mailto:info@vijofitness.com">info@vijofitness.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vijo Fitness Gym. All rights reserved. Designed with passion.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+  </html>
